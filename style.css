@@ -69,5 +69,10 @@ body {
   object-fit: cover;
 }
   
-  
+.hidden-text {
+  display: none;
+  position:absolute;
+  top: 650px;
+  left:150px;
+} 
   

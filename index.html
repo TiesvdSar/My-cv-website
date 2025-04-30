@@ -12,8 +12,8 @@
 <header class="hero">
   <div class="hero-text">
     <h2>HELLO!</h2>
-    <h1>I Am Ties van der Sar</h1>
-    <p>I'm a Mechatronics Engineering Student passionate to learn new things </p>
+    <h1>I am Ties van der Sar</h1>
+    <p>I'm a Mechatronics Engineering Student, passionated to learn new things </p>
 
   </div>
 
@@ -21,6 +21,16 @@
     <img src="images/your-photo.jpg" alt="My Photo">
   </div>
 </header>
+
+  <button class="btn" style="position: absolute; top: 600px; left: 150px;" onclick="toggleText()">Projects</button>
+  <div id="text" class="hidden-text"> Hello! You clicked the button.</div>
+
+  <script>
+    function toggleText() {
+      const text = document.getElementById("text");
+      text.style.display = text.style.display === "none" ? "block" : "none";
+    }
+  </script>
 
 </body>
 </html>
