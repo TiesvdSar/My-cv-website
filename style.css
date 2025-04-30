@@ -17,7 +17,6 @@ body, h1, h2, p {
     padding: 60px 10%;
     min-height: 100vh;
     background-color: #0f0f1a;
-    background-image: url('background-lines.png'); /* optional background image for lines */
     background-size: cover;
     background-position: center;
   }
