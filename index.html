@@ -23,12 +23,16 @@
 </header>
 
   <button class="btn" style="position: absolute; top: 600px; left: 150px;" onclick="toggleText()">Projects</button>
-  <div id="text" class="hidden-text"> Hello! You clicked the button.</div>
+  <div id="text" class="hidden-text"> Wie dit leest trekt een bak.</div>
 
   <script>
     function toggleText() {
       const text = document.getElementById("text");
-      text.style.display = text.style.display === "none" ? "block" : "none";
+      if (text.style.display === "block") {
+      text.style.display = "none";
+      } else {
+        text.style.display = "block";
+      }
     }
   </script>
 
