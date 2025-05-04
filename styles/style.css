@@ -1,0 +1,129 @@
+/* Reset some basic styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f1a; /* dark background */
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+  min-height: 100vh;
+  background-color: #0f0f1a;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  color: #ff4c60;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.project-btn {
+  position: absolute;
+    top: 65%;
+    left: 150px;
+    background: transparent;
+    border: none;
+    color: white; /* Adjust for visibility */
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-btn:hover {
+  background-color: #3f3f6d;
+}
+
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+  
+.hidden-text {
+  display: none;
+  position:absolute;
+  top: 650px;
+  left:150px;
+} 
+  
+.active {
+  background-color: #3f3f6d; /* Highlighted color */
+}
+
+.education-btn {
+  position: absolute;
+    top: 65%;
+    left: 302px;
+    background: transparent;
+    border: none;
+    color: white; /* Adjust for visibility */
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.education-btn:hover {
+  background-color: #3f3f6d;
+}
+
+.edu-hidden-text{
+  display: none;
+  position:absolute;
+  top: 650px;
+  left:150px;
+}
+
+.career-btn {
+  position: absolute;
+    top: 65%;
+    left: 442px;
+    background: transparent;
+    border: none;
+    color: white; /* Adjust for visibility */
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.career-btn:hover {
+  background-color: #3f3f6d;
+}
+
+.career-hidden-text{
+  display: none;
+  position:absolute;
+  top: 650px;
+  left:150px;
+}

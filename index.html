@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My CV</title>
   <!-- <base href="/My-cv-website/"> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
+  <!-- Begin text -->
 <header class="hero">
   <div class="hero-text">
     <h2>HELLO!</h2>
@@ -17,24 +18,29 @@
 
   </div>
 
+  <!-- Image of myself -->
   <div class="hero-image">
     <img src="images/your-photo.jpg" alt="My Photo">
   </div>
 </header>
 
-  <button class="btn" style="position: absolute; top: 600px; left: 150px;" onclick="toggleText()">Projects</button>
+<!-- Projects button -->
+  <button id="toggle-btn" class="project-btn" onclick="toggleText()">My projects</button>
   <div id="text" class="hidden-text"> Wie dit leest trekt een bak.</div>
 
-  <script>
-    function toggleText() {
-      const text = document.getElementById("text");
-      if (text.style.display === "block") {
-      text.style.display = "none";
-      } else {
-        text.style.display = "block";
-      }
-    }
-  </script>
+  <script src="scripts/project-button.js"></script>
+
+<!-- Education button -->
+<button id="toggle-edu-btn" class="education-btn" onclick="toggle_edu_Text()">Education</button>
+<div id="edu-text" class="edu-hidden-text"> Dit is mijn education.</div>
+
+<script src="scripts/education-button.js"></script>
+
+<!-- Career button -->
+<button id="toggle-career-btn" class="career-btn" onclick="toggle_career_Text()">Career</button>
+<div id="career-text" class="career-hidden-text"> This is my career.</div>
+
+<script src="scripts/career-button.js"></script>
 
 </body>
 </html>
