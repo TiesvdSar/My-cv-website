@@ -52,7 +52,7 @@ body {
   position: absolute;
     top: 65%;
     left: 150px;
-    background: transparent;
+    background: #3f3f6d;
     border: none;
     color: white; /* Adjust for visibility */
     font-size: 18px;
@@ -72,14 +72,14 @@ body {
 }
   
 .hidden-text {
-  display: none;
+  display: block;
   position:absolute;
   top: 650px;
   left:150px;
 } 
   
 .active {
-  background-color: #3f3f6d; /* Highlighted color */
+  background-color: #0f0f1a; /* Highlighted color */
 }
 
 .education-btn {
@@ -126,4 +126,8 @@ body {
   position:absolute;
   top: 650px;
   left:150px;
+}
+
+.active2 {
+  background-color: #3f3f6d; /* Highlighted color */
 }
