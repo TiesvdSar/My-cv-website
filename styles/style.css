@@ -50,7 +50,7 @@ body {
 
 .project-btn {
   position: absolute;
-    top: 65%;
+    top: 600px;
     left: 150px;
     background: #3f3f6d;
     border: none;
@@ -84,7 +84,7 @@ body {
 
 .education-btn {
   position: absolute;
-    top: 65%;
+    top: 600px;
     left: 302px;
     background: transparent;
     border: none;
@@ -107,7 +107,7 @@ body {
 
 .career-btn {
   position: absolute;
-    top: 65%;
+    top: 600px;
     left: 442px;
     background: transparent;
     border: none;
@@ -131,3 +131,52 @@ body {
 .active2 {
   background-color: #3f3f6d; /* Highlighted color */
 }
+
+
+
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.date {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.details {
+  margin-left: 20px;
+}
+
+
+.pdf-preview img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+  
