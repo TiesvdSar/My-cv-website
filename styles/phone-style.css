@@ -1,0 +1,159 @@
+@media (max-width: 600px) {
+    .hero {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 5%;
+        min-height: 10vh;
+        flex-wrap: wrap;
+      }
+    
+    .hero-text {
+      flex: 1;
+      max-width: 600px;
+    }
+    
+    .hero-text h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .hero-text h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-text p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .project-btn {
+      position: absolute;
+        top: 600px;
+        left: 50px;
+        font-size: 18px;
+        padding: 10px 30px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .hero-image img {
+      width: 50%;
+      max-width: 70%;
+      border-radius: 10px;
+      margin-left: 0px;
+    }
+      
+    .hidden-text {
+      display: block;
+      position:absolute;
+      top: 650px;
+      left: 50px;
+    } 
+      
+    .active {
+      background-color: #0f0f1a; /* Highlighted color */
+    }
+    
+    .education-btn {
+      position: absolute;
+        top: 600px;
+        left: 202px;
+        background: transparent;
+        border: none;
+        color: white; /* Adjust for visibility */
+        font-size: 18px;
+        padding: 10px 30px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .education-btn:hover {
+      background-color: #3f3f6d;
+    }
+    
+    .edu-hidden-text{
+      display: none;
+      position:absolute;
+      top: 650px;
+      left: 50px;
+    }
+    
+    .career-btn {
+      position: absolute;
+        top: 600px;
+        left: 342px;
+        background: transparent;
+        border: none;
+        color: white; /* Adjust for visibility */
+        font-size: 18px;
+        padding: 10px 30px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .career-btn:hover {
+      background-color: #3f3f6d;
+    }
+    
+    .career-hidden-text{
+      display: none;
+      position:absolute;
+      top: 650px;
+      left: 50px;
+    }
+    
+    .active2 {
+      background-color: #3f3f6d; /* Highlighted color */
+    }
+    
+    
+    /* styles.css */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 15px;
+    }
+    
+    .date {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .details {
+      margin-left: 20px;
+    }
+    
+    
+    .pdf-preview img {
+      width: 150px; /* Adjust the width as needed */
+      height: auto;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+}
