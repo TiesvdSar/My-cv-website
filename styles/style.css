@@ -48,16 +48,19 @@ body {
   gap: 20px;
 }
 
+.info-btns {
+  border: none;
+  color: white; /* Adjust for visibility */
+  font-size: 18px;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
 .project-btn {
   position: absolute;
-    top: 600px;
-    left: 150px;
-    background: #3f3f6d;
-    border: none;
-    color: white; /* Adjust for visibility */
-    font-size: 18px;
-    padding: 10px 30px;
-    transition: background-color 0.3s ease-in-out;
+  background: #3f3f6d;
+  top: 600px;
+  left: 150px;
 }
 
 .project-btn:hover {
@@ -71,12 +74,15 @@ body {
   object-fit: cover;
 }
   
-.hidden-text {
+.proj-hidden-text {
   display: block;
   position:absolute;
+}
+
+.hidden-tekst-possition{
   top: 650px;
   left:150px;
-} 
+}
   
 .active {
   background-color: #0f0f1a; /* Highlighted color */
@@ -84,14 +90,9 @@ body {
 
 .education-btn {
   position: absolute;
-    top: 600px;
-    left: 302px;
-    background: transparent;
-    border: none;
-    color: white; /* Adjust for visibility */
-    font-size: 18px;
-    padding: 10px 30px;
-    transition: background-color 0.3s ease-in-out;
+  background: #0f0f1a;
+  top: 600px;
+  left: 302px;
 }
 
 .education-btn:hover {
@@ -101,20 +102,13 @@ body {
 .edu-hidden-text{
   display: none;
   position:absolute;
-  top: 650px;
-  left:150px;
 }
 
 .career-btn {
   position: absolute;
-    top: 600px;
-    left: 442px;
-    background: transparent;
-    border: none;
-    color: white; /* Adjust for visibility */
-    font-size: 18px;
-    padding: 10px 30px;
-    transition: background-color 0.3s ease-in-out;
+  background: #0f0f1a;
+  top: 600px;
+  left: 442px;
 }
 
 .career-btn:hover {
@@ -124,16 +118,11 @@ body {
 .career-hidden-text{
   display: none;
   position:absolute;
-  top: 650px;
-  left:150px;
 }
 
 .active2 {
   background-color: #3f3f6d; /* Highlighted color */
 }
-
-
-
 
 /* styles.css */
 body {
