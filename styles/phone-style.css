@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .hero {
       display: flex;
       align-items: flex-start;
@@ -13,18 +13,23 @@
     max-width: 600px;
   }
 
+  .hero-image img {
+    width: 50%;
+    max-width: 70%;
+  }
+
   .hero-text h2 {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
   .hero-text h1 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
 
   .hero-text p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
     margin-bottom: 30px;
   }
@@ -45,13 +50,6 @@
 
   }
 
-  .hero-image img {
-    width: 50%;
-    max-width: 70%;
-    border-radius: 10px;
-    margin-left: 0px;
-  }
-
   .education-btn {
     top: 550px;
     left: 121px;
@@ -63,8 +61,8 @@
   }
 
   .hidden-tekst-possition{
-    top: 550px;
-    left:150px;
+    top: 580px;
+    left: 20px;
   }
 
   body {
@@ -102,7 +100,6 @@
   .details {
     margin-left: 20px;
   }
-
 
   .pdf-preview img {
     width: 150px; /* Adjust the width as needed */
