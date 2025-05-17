@@ -14,7 +14,7 @@
   }
 
   .hero-image img {
-    width: 50%;
+    width: 60%;
     max-width: 70%;
   }
 
@@ -47,7 +47,6 @@
   .project-btn {
     top: 550px;
     left: 30px;
-
   }
 
   .education-btn {
