@@ -1,5 +1,43 @@
 .project-info{
     position: relative;
+    margin-top: 30px;
+}
+
+.project-info img{
+    width: 60%;
+}
+
+body{
     margin-top: 100px;
     margin-left: 100px;
+    max-width: 60%;
+}
+
+.toggle-container {
+      cursor: pointer;
+      user-select: none;
+      width: fit-content;
+    }
+
+.arrow {
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.content {
+    display: none;
+    margin-top: 10px;
+}
+
+.show .content {
+    display: block;
+}
+
+.show .arrow {
+    transform: rotate(180deg);
+}
+
+.content2 {
+    display: none;
 }
