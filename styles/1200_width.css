@@ -1,0 +1,65 @@
+@media (max-width: 1200px ) and (min-width:821px) {
+
+    .hero-text h1 {
+    font-size: 32px;
+    }
+
+    .hero-text h2 {
+    font-size: 18px;
+    }
+
+    .hero{
+        margin-top: 100px;
+    }
+
+    .hero-text p {
+    font-size: 16px;
+    }
+
+    .hero-image img {
+    width: 300px;
+    }
+
+    .info-btns {
+    font-size: 17px;
+    padding: 10px 25px;
+    }
+
+    .project-btn {
+    top: 470px;
+    left: 135px;
+    }
+
+    .education-btn {
+    top: 470px;
+    left: 271px;
+    }
+
+    .hidden-tekst-possition{
+    top: 530px;
+    left:150px;
+    }
+
+    .career-btn {
+    top: 470px;
+    left: 396px;
+    }
+
+    body{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .pdf-preview img {
+        width: 30%; /* Adjust the width as needed */
+    }
+
+    .details{
+        max-width: 70%;
+    }
+
+
+}

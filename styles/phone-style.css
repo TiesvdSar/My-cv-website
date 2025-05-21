@@ -4,7 +4,6 @@
       align-items: flex-start;
       justify-content: space-between;
       padding: 5%;
-      min-height: 10vh;
       flex-wrap: wrap;
     }
 
@@ -14,8 +13,10 @@
   }
 
   .hero-image img {
-    width: 55%;
-    max-width: 70%;
+    width: 250px;
+    /* max-width: 70%; */
+    object-fit: fill;
+    margin-left: 10px;
   }
 
   .hero-text h2 {

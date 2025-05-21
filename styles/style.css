@@ -173,4 +173,24 @@ li {
 .project-photos img{
   width: 30%;
 }
+
+.social-links {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  filter: invert(0.7); /* Adjust based on your site background */
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
   
