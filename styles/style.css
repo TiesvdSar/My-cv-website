@@ -14,7 +14,7 @@ body {
   display: flex;
   margin-top: 150px;
   justify-content: space-between;
-  padding: 0px 10%;
+  padding: 0px 150px;
   min-height: 100vh;
   background-color: #0f0f1a;
   background-size: cover;
@@ -101,7 +101,7 @@ body {
 
 .edu-hidden-text{
   display: none;
-  position:absolute;
+  position: absolute;
 }
 
 .career-btn {
