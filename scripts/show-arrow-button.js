@@ -9,6 +9,8 @@ if (id === "section1") {
     label.textContent = container.classList.contains("show") ? "Show less" : "Show more about October 2024";
 } else if (id === "section3") {
     label.textContent = container.classList.contains("show") ? "Show less" : "Show more about March 2025";
+} else if (id === "section4") {
+    label.textContent = container.classList.contains("show") ? "Show less" : "Show more about July 2025";
 }
 }
 
