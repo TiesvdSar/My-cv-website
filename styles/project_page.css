@@ -1,43 +1,177 @@
-.project-info{
-    position: relative;
-    margin-top: 30px;
+/* =============================================
+   SPITFIRE PROJECT PAGE
+   ============================================= */
+
+.page-header {
+  padding-top: calc(var(--nav-h) + 60px);
+  padding-bottom: 60px;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
 }
 
-.project-info img{
-    width: 60%;
+.back-link {
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.2s;
 }
 
-body{
-    margin-top: 100px;
-    margin-left: 10%;
-    max-width: 80%;
+.back-link:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-.toggle-container {
-      cursor: pointer;
-      user-select: none;
-      width: fit-content;
-    }
-
-.arrow {
-    display: inline-block;
-    margin-right: 8px;
-    transition: transform 0.3s;
+.page-title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 10px;
 }
 
-.content {
-    display: none;
-    margin-top: 10px;
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.show .content {
-    display: block;
+/* Content wrapper */
+.spitfire-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.show .arrow {
-    transform: rotate(180deg);
+/* Backstory */
+.backstory {
+  margin-bottom: 64px;
 }
 
-.content2 {
-    display: none;
+.backstory p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 680px;
+  margin-bottom: 16px;
+}
+
+.backstory p:last-child { margin-bottom: 0; }
+
+.backstory em {
+  color: var(--text);
+  font-style: italic;
+}
+
+/* Milestones */
+.milestone {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.milestone:hover {
+  border-color: rgba(255, 76, 96, 0.3);
+}
+
+.milestone-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  cursor: pointer;
+  user-select: none;
+  gap: 16px;
+}
+
+.milestone-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.milestone-date {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.milestone-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.milestone-arrow {
+  color: var(--text-muted);
+  font-size: 14px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+/* Accordion body */
+.milestone-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 28px;
+}
+
+.milestone.open .milestone-body {
+  padding-bottom: 28px;
+}
+
+.milestone-body p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.milestone-body p:last-child { margin-bottom: 0; }
+
+.milestone-images {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.milestone-images img {
+  flex: 1;
+  min-width: 200px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  max-height: 320px;
+}
+
+.milestone-video {
+  margin-bottom: 16px;
+}
+
+.milestone-video video {
+  width: 50%;
+  min-width: 240px;
+  border-radius: 10px;
+  background: #000;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 620px) {
+  .milestone-header { padding: 20px; }
+  .milestone-body { padding: 0 20px; }
+  .milestone.open .milestone-body { padding-bottom: 20px; }
+  .milestone-video video { width: 100%; }
+  .milestone-images img { min-width: 100%; }
 }
