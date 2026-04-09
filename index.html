@@ -16,10 +16,15 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo">TIES</a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
-        <li><a href="#education" onclick="closeNav()">Education</a></li>
-        <li><a href="#career" onclick="closeNav()">Career</a></li>
+        <li><a href="#projects" onclick="closeNav()" data-en="Projects" data-nl="Projecten">Projects</a></li>
+        <li><a href="#education" onclick="closeNav()" data-en="Education" data-nl="Opleiding">Education</a></li>
+        <li><a href="#career" onclick="closeNav()" data-en="Career" data-nl="Ervaring">Career</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </div>
       <div class="nav-social">
         <a href="https://www.linkedin.com/in/ties-van-der-sar/" target="_blank" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
@@ -36,17 +41,29 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
+        <p class="hero-greeting" data-en="Hello, I'm" data-nl="Hallo, ik ben">Hello, I'm</p>
         <h1 class="hero-name">Ties van der Sar</h1>
         <h2 class="hero-title">Mechatronics Engineer</h2>
-        <p class="hero-bio">
-          Mechatronics Engineer with a passion for robotics, automation, and intelligent systems.
-          Currently working at <strong>ICT Group</strong>.
-          Always exploring — from AI with Harvard's CS50 to restoring a 1975 Triumph Spitfire.
+        <p class="hero-bio t-en">
+          Mechatronics engineer specializing in industrial automation, hardware &amp; software design,
+          and building management systems. Currently working as Hardware &amp; Software Engineer at
+          <strong>ICT Group</strong>, following internships at Siemens Netherlands and Royal Houdijk.
         </p>
+        <p class="hero-bio t-nl" style="display:none">
+          Mechatronica-ingenieur gespecialiseerd in industriële automatisering, hardware- &amp; softwareontwerp
+          en gebouwbeheersystemen. Momenteel werkzaam als Hardware &amp; Software Engineer bij
+          <strong>ICT Group</strong>, na stages bij Siemens Nederland en Royal Houdijk.
+        </p>
+        <div class="skill-chips">
+          <span class="skill-chip">SCADA</span>
+          <span class="skill-chip" data-en="PCB Design" data-nl="Printplaatontwerp">PCB Design</span>
+          <span class="skill-chip">Motion Control</span>
+          <span class="skill-chip" data-en="Industrial Automation" data-nl="Industriële Automatisering">Industrial Automation</span>
+          <span class="skill-chip">Python</span>
+        </div>
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">See My Work</a>
-          <a href="#career" class="btn btn-secondary">My Experience</a>
+          <a href="#projects" class="btn btn-primary" data-en="See My Work" data-nl="Mijn Werk">See My Work</a>
+          <a href="#career" class="btn btn-secondary" data-en="My Experience" data-nl="Mijn Ervaring">My Experience</a>
         </div>
       </div>
       <div class="hero-image">
@@ -61,7 +78,7 @@
   <!-- Projects -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title" data-en="Projects" data-nl="Projecten">Projects</h2>
       <div class="projects-grid">
 
         <div class="project-card">
@@ -69,21 +86,25 @@
             <img src="images/Spitfire5.jpg" alt="Triumph Spitfire Mark IV">
           </div>
           <div class="project-body">
-            <span class="project-tag">Automotive &middot; Restoration</span>
+            <span class="project-tag" data-en="Automotive &middot; Restoration" data-nl="Automotive &middot; Restauratie">Automotive &middot; Restoration</span>
             <h3>Triumph Spitfire Mark IV</h3>
-            <p>Restoring a classic 1975 English sports car together with my friend Gijs.
+            <p class="t-en">Restoring a classic 1975 English sports car together with my friend Gijs.
                The car was in storage since 2010 and is now back on the road.</p>
-            <a href="pages/spitfire_mark_IV.html" class="btn btn-primary btn-sm">Follow Progress &rarr;</a>
+            <p class="t-nl" style="display:none">Restauratie van een klassieke Engelse sportwagen uit 1975 samen met mijn vriend Gijs.
+               De auto stond sinds 2010 in opslag en rijdt nu weer op de weg.</p>
+            <a href="pages/spitfire_mark_IV.html" class="btn btn-primary btn-sm" data-en="Follow Progress &rarr;" data-nl="Volg de Voortgang &rarr;">Follow Progress &rarr;</a>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-body project-body-center">
-            <span class="project-tag">Software &middot; Web</span>
-            <h3>This Website</h3>
-            <p>Built this portfolio from scratch using HTML, CSS, and JavaScript.
+            <span class="project-tag" data-en="Software &middot; Web" data-nl="Software &middot; Web">Software &middot; Web</span>
+            <h3 data-en="This Website" data-nl="Deze Website">This Website</h3>
+            <p class="t-en">Built this portfolio from scratch using HTML, CSS, and JavaScript.
                Source code available on GitHub.</p>
-            <a href="https://github.com/TiesvdSar" target="_blank" class="btn btn-primary btn-sm">View on GitHub &rarr;</a>
+            <p class="t-nl" style="display:none">Dit portfolio gebouwd vanuit het niets met HTML, CSS en JavaScript.
+               Broncode beschikbaar op GitHub.</p>
+            <a href="https://github.com/TiesvdSar" target="_blank" class="btn btn-primary btn-sm" data-en="View on GitHub &rarr;" data-nl="Bekijk op GitHub &rarr;">View on GitHub &rarr;</a>
           </div>
         </div>
 
@@ -94,14 +115,16 @@
   <!-- Education -->
   <section id="education" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title" data-en="Education" data-nl="Opleiding">Education</h2>
       <div class="timeline">
 
         <div class="timeline-item">
-          <div class="timeline-date">Sep 2020 &ndash; Oct 2025</div>
+          <div class="timeline-date">Jan 2020 &ndash; Jul 2025</div>
           <div class="timeline-content">
-            <h3>Mechatronics &mdash; Bachelor of Engineering</h3>
+            <h3 data-en="Mechatronics &mdash; Bachelor of Engineering" data-nl="Mechatronica &mdash; Bachelor of Engineering">Mechatronics &mdash; Bachelor of Engineering</h3>
             <p class="timeline-org">The Hague University of Applied Sciences</p>
+            <p class="t-en">Mechatronics, Robotics, and Automation Engineering.</p>
+            <p class="t-nl" style="display:none">Mechatronica, Robotica en Automatiseringstechniek.</p>
           </div>
         </div>
 
@@ -110,8 +133,9 @@
           <div class="timeline-content">
             <h3>CS50's Introduction to Artificial Intelligence with Python</h3>
             <p class="timeline-org">Harvard University</p>
-            <p>Core principles of AI and how to develop AI programs using Python.</p>
-            <a href="images/CS50AI.pdf" target="_blank" class="cert-link">View Certificate &nearr;</a>
+            <p class="t-en">Core principles of AI and how to develop AI programs using Python.</p>
+            <p class="t-nl" style="display:none">Kernprincipes van AI en het ontwikkelen van AI-programma's met Python.</p>
+            <a href="images/CS50AI.pdf" target="_blank" class="cert-link" data-en="View Certificate &nearr;" data-nl="Bekijk Certificaat &nearr;">View Certificate &nearr;</a>
           </div>
         </div>
 
@@ -120,17 +144,19 @@
           <div class="timeline-content">
             <h3>CS50's Introduction to Cybersecurity</h3>
             <p class="timeline-org">Harvard University</p>
-            <p>Fundamentals of cybersecurity &mdash; how threats arise and how to prevent them.</p>
-            <a href="images/CS50's cybersecurity.pdf" target="_blank" class="cert-link">View Certificate &nearr;</a>
+            <p class="t-en">Fundamentals of cybersecurity &mdash; how threats arise and how to prevent them.</p>
+            <p class="t-nl" style="display:none">Basisprincipes van cybersecurity &mdash; hoe bedreigingen ontstaan en hoe ze te voorkomen.</p>
+            <a href="images/CS50's cybersecurity.pdf" target="_blank" class="cert-link" data-en="View Certificate &nearr;" data-nl="Bekijk Certificaat &nearr;">View Certificate &nearr;</a>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Aug 2022 &ndash; Feb 2023</div>
           <div class="timeline-content">
-            <h3>Minor: Smart Manufacturing and Robotics</h3>
+            <h3 data-en="Minor: Smart Manufacturing &amp; Robotics" data-nl="Minor: Smart Manufacturing &amp; Robotics">Minor: Smart Manufacturing &amp; Robotics</h3>
             <p class="timeline-org">The Hague University of Applied Sciences</p>
-            <p>Two industry projects using robotic arms, in collaboration with real companies.</p>
+            <p class="t-en">Two industry projects using robotic arms, in collaboration with real companies.</p>
+            <p class="t-nl" style="display:none">Twee bedrijfsprojecten met robotarmen, in samenwerking met echte bedrijven.</p>
             <div class="video-row">
               <video controls poster="images/gabmeasurement-tumbnail.jpg">
                 <source src="videos/Gap measurement _ AV Flexologic.mp4" type="video/mp4">
@@ -149,16 +175,17 @@
           <div class="timeline-content">
             <h3>VCA V.O.L.</h3>
             <p class="timeline-org">Royal PBNA</p>
-            <a href="images/VCA-vol.pdf" target="_blank" class="cert-link">View Certificate &nearr;</a>
+            <a href="images/VCA-vol.pdf" target="_blank" class="cert-link" data-en="View Certificate &nearr;" data-nl="Bekijk Certificaat &nearr;">View Certificate &nearr;</a>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Sep 2015 &ndash; Jul 2020</div>
           <div class="timeline-content">
-            <h3>HAVO &mdash; Nature &amp; Health / Nature &amp; Technology</h3>
+            <h3 data-en="HAVO &mdash; Nature &amp; Health / Nature &amp; Technology" data-nl="HAVO &mdash; Natuur &amp; Gezondheid / Natuur &amp; Techniek">HAVO &mdash; Nature &amp; Health / Nature &amp; Technology</h3>
             <p class="timeline-org">Wolfert Lyceum</p>
-            <p>Focus on business administration, with Mathematics D as an additional subject.</p>
+            <p class="t-en">Focus on business administration, with Mathematics D as an additional subject.</p>
+            <p class="t-nl" style="display:none">Focus op bedrijfsadministratie, met Wiskunde D als extra vak.</p>
           </div>
         </div>
 
@@ -169,95 +196,112 @@
   <!-- Career -->
   <section id="career" class="section">
     <div class="container">
-      <h2 class="section-title">Working Experience</h2>
+      <h2 class="section-title" data-en="Working Experience" data-nl="Werkervaring">Working Experience</h2>
       <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">Dec 2025 &ndash; Present</div>
+          <div class="timeline-content">
+            <h3 data-en="Hardware &amp; Software Engineer" data-nl="Hardware &amp; Software Engineer">Hardware &amp; Software Engineer</h3>
+            <p class="timeline-org"><a href="https://www.ict.eu/" target="_blank">ICT Group</a></p>
+            <p class="t-en">Working in industrial automation, serving high-profile clients including Petrogas, Cargill, ESA, and Mammoet.
+              My role spans the full project lifecycle — from consulting with clients to understand their operational needs, to designing hardware and software solutions, building simulations, and implementing systems on-site.</p>
+            <p class="t-nl" style="display:none">Werkzaam in industriële automatisering voor toonaangevende klanten zoals Petrogas, Cargill, ESA en Mammoet.
+              Mijn rol beslaat de volledige projectlevenscyclus — van klantadvies over operationele behoeften tot het ontwerpen van hardware- en softwareoplossingen, het bouwen van simulaties en de implementatie ter plaatse.</p>
+          </div>
+        </div>
 
         <div class="timeline-item">
           <div class="timeline-date">May 2025 &ndash; Oct 2025</div>
           <div class="timeline-content">
-            <h3>Graduation Internship</h3>
+            <h3 data-en="Graduation Internship" data-nl="Afstudeerstage">Graduation Internship</h3>
             <p class="timeline-org"><a href="https://www.siemens.com/nl/nl.html" target="_blank">Siemens Netherlands</a></p>
+            <p class="t-en">Developed a commercial demo of Desigo Optic — Siemens' building management platform.
+              Researched customer expectations of the platform, then designed and built a reusable template enabling customers to configure their buildings faster and more efficiently.
+              Every design decision was future-proofed for scalability and adaptability.</p>
+            <p class="t-nl" style="display:none">Ontwikkelde een commerciële demo van Desigo Optic — het gebouwbeheersplatform van Siemens.
+              Onderzocht klantverwachtingen en ontwierp een herbruikbaar sjabloon waarmee klanten hun gebouwen sneller en efficiënter kunnen configureren.
+              Elke ontwerpbeslissing was toekomstbestendig voor schaalbaarheid en aanpasbaarheid.</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Feb 2025 &ndash; Apr 2025</div>
           <div class="timeline-content">
-            <h3>Internship &mdash; HVAC Engineering</h3>
+            <h3 data-en="Internship &mdash; HVAC Engineering" data-nl="Stage &mdash; HVAC-techniek">Internship &mdash; HVAC Engineering</h3>
             <p class="timeline-org"><a href="https://www.siemens.com/nl/nl.html" target="_blank">Siemens Netherlands</a></p>
-            <p>Gained knowledge of HVAC systems and Siemens' approach, then applied it by completing a customer project.</p>
+            <p class="t-en">Immersed myself in HVAC technology, building a thorough understanding of its principles and applications.
+              Designed and realized a working HVAC system from the ground up.
+              As the capstone, developed a simulation of a multi-building complex that served as the foundation for my graduation project.</p>
+            <p class="t-nl" style="display:none">Verdiept in HVAC-technologie en een grondige kennis opgebouwd van de principes en toepassingen.
+              Een werkend HVAC-systeem ontworpen en gerealiseerd van de grond af.
+              Als eindopdracht een simulatie ontwikkeld van een gebouwencomplex, die als basis diende voor het afstudeerproject.</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Sep 2024 &ndash; Feb 2025</div>
           <div class="timeline-content">
-            <h3>Working Student</h3>
+            <h3 data-en="Student Employee" data-nl="Studentmedewerker">Student Employee</h3>
             <p class="timeline-org"><a href="https://www.siemens.com/nl/nl.html" target="_blank">Siemens Netherlands</a></p>
-            <p>Created training courses, resolved customer issues, and tested and analyzed equipment.</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Feb 2024 &ndash; Aug 2024</div>
           <div class="timeline-content">
-            <h3>Internship &mdash; Mechanical Engineering</h3>
+            <h3 data-en="Internship &mdash; Hardware &amp; Software Engineer" data-nl="Stage &mdash; Hardware &amp; Software Engineer">Internship &mdash; Hardware &amp; Software Engineer</h3>
             <p class="timeline-org"><a href="https://www.houdijk.com/" target="_blank">Royal Houdijk</a></p>
-            <p>Redesigned the vibratory chute system, achieving cost savings of &euro;30,000&ndash;&euro;40,000 per unit.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">May 2022 &ndash; Aug 2024</div>
-          <div class="timeline-content">
-            <h3>Various Roles</h3>
-            <p class="timeline-org"><a href="https://www.stud.nl/" target="_blank">STUD Employment Agency</a></p>
-            <p>Worked in hospitality, horeca, and cleaning through the student employment agency.</p>
+            <p class="t-en">Analyzed an existing operational system to identify cost-saving opportunities.
+              Conducted a technical and financial analysis, then took full ownership of the implementation —
+              designing, testing, and deploying the solution from concept to production, ultimately achieving a 30% cost reduction.</p>
+            <p class="t-nl" style="display:none">Een bestaand operationeel systeem geanalyseerd om kostenbesparing­smogelijkheden te identificeren.
+              Technische en financiële analyse uitgevoerd, waarna volledige verantwoordelijkheid genomen voor de implementatie —
+              van ontwerp en testen tot productie-inzet, met uiteindelijk een kostenbesparing van 30%.</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Feb 2023 &ndash; Oct 2023</div>
           <div class="timeline-content">
-            <h3>Treasurer &mdash; 8-Day Student Festival</h3>
-            <p class="timeline-org"><a href="https://excitatie.nl/" target="_blank">K.S.V. Virgiel</a></p>
-            <p>Managed finances and logistics for an 8-day festival.</p>
+            <h3 data-en="Treasurer &mdash; Terrain Praesidium" data-nl="Penningmeester &mdash; Terrein Preasidium">Treasurer &mdash; Terrain Praesidium</h3>
+            <p class="timeline-org"><a href="https://excitatie.nl/" target="_blank">K.S.V. Sanctus Virgilius</a></p>
+            <p class="t-en">Managed the full budget of an 8-day festival for the 25th Lustrum of K.S.V. Sanctus Virgilius,
+              with 40,000 tickets sold across 7 days. Also led the entire build-up crew and held
+              end-to-end operational responsibility during the festival.</p>
+            <p class="t-nl" style="display:none">Beheerde het volledige budget van een 8-daags festival voor het 25e Lustrum van K.S.V. Sanctus Virgilius,
+              met 40.000 verkochte tickets over 7 dagen. Leidde ook de gehele opbouwploeg en had
+              eind-tot-eind operationele verantwoordelijkheid tijdens het festival.</p>
           </div>
         </div>
 
         <div class="timeline-item">
-          <div class="timeline-date">Jul 2022 &ndash; Aug 2022</div>
+          <div class="timeline-date">Jul 2022 &ndash; Jan 2023</div>
           <div class="timeline-content">
-            <h3>Medical Assistant / Desk Clerk</h3>
+            <h3 data-en="Medical Assistant" data-nl="Medisch Assistent">Medical Assistant</h3>
             <p class="timeline-org"><a href="https://www.maasstadziekenhuis.nl/" target="_blank">Maasstad Hospital</a></p>
-            <p>Worked as desk clerk across multiple departments and assisted with basic patient procedures.</p>
+            <p class="t-en">Worked as desk clerk across multiple departments and assisted with basic patient procedures.</p>
+            <p class="t-nl" style="display:none">Werkte als baliemedewerker op verschillende afdelingen en assisteerde bij eenvoudige patiëntenprocedures.</p>
           </div>
         </div>
 
         <div class="timeline-item">
-          <div class="timeline-date">Jun 2019 &ndash; Sep 2022</div>
+          <div class="timeline-date">Jun 2019 &ndash; Aug 2022</div>
           <div class="timeline-content">
-            <h3>Greenhouse Employee &amp; Landscaper</h3>
+            <h3 data-en="Part-time Employee" data-nl="Parttime Medewerker">Part-time Employee</h3>
             <p class="timeline-org"><a href="https://duijvestijntomaten.nl/" target="_blank">Duijvestijn Tomaten</a></p>
-            <p>Progressed from picking tomatoes to managing student workers, eventually becoming a landscaper.</p>
+            <p class="t-en">Worked in various roles at a tomato greenhouse over 3 years.</p>
+            <p class="t-nl" style="display:none">Werkzaam in verschillende functies bij een tomatenkwekerij gedurende 3 jaar.</p>
           </div>
         </div>
 
         <div class="timeline-item">
-          <div class="timeline-date">Jan 2022 &ndash; Apr 2022</div>
+          <div class="timeline-date">Jun 2021 &ndash; Aug 2021</div>
           <div class="timeline-content">
-            <h3>High School Exam Tutor</h3>
-            <p class="timeline-org"><a href="https://www.lyceo.nl/" target="_blank">Lyceo</a></p>
-            <p>Tutored students in math, physics, and general science, including final exam preparation.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">Jul 2021 &ndash; Aug 2021</div>
-          <div class="timeline-content">
-            <h3>Slot Machine Technician</h3>
-            <p class="timeline-org"><a href="https://gamingsupport.com/" target="_blank">Gaming Casino Service B.V.</a></p>
-            <p>Repaired and installed slot machines and other casino gaming tables.</p>
+            <h3 data-en="Repair Assistant" data-nl="Assistent Reparatie">Repair Assistant</h3>
+            <p class="timeline-org"><a href="https://gamingsupport.com/" target="_blank">Gaming Support</a></p>
+            <p class="t-en">Repaired and installed slot machines and other casino gaming equipment.</p>
+            <p class="t-nl" style="display:none">Repareerde en installeerde gokkasten en ander casinomateriaal.</p>
           </div>
         </div>
 
@@ -269,7 +313,7 @@
   <footer class="footer">
     <div class="container">
       <p class="footer-name">Ties van der Sar</p>
-      <p class="footer-sub">Mechatronics Engineer &middot; The Hague, Netherlands</p>
+      <p class="footer-sub" data-en="Mechatronics Engineer &middot; The Hague, Netherlands" data-nl="Mechatronica-ingenieur &middot; Den Haag, Nederland">Mechatronics Engineer &middot; The Hague, Netherlands</p>
       <div class="footer-social">
         <a href="https://www.linkedin.com/in/ties-van-der-sar/" target="_blank" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
