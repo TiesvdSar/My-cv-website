@@ -3,126 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spitfire mark IV progress</title>
-  <!-- <base href="/My-cv-website/"> -->
+  <title>Project Spitfire — Ties van der Sar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/project_page.css">
 </head>
 <body>
 
-  <h1> Project Spitfire</h2>
-  <br>
-  <h2>Backstory</h2>
-  My father bought this Spitfire a long time ago as a gift for my mother.
-  They made many trips to different countries across Europe.
-  I also remember going for a ride with my father when I was seven years old.
-
-  In 2010, unfortunately, the car broke down and was put into storage.
-  After 14 years, in 2024, my father said to me—the only son studying a technical field—
-  "Do you want to repair the Spitfire? Otherwise, I’m going to sell the car."<br>
-  Below are the milestones of the process.
-
-
-  <div class="project-info">
-    <h2>June 2024</h2>
-    <!-- First toggle section -->
-    <div id="section1" class="toggle-container">
-      <div class="header" onclick="toggleSection('section1')">
-        <span class="arrow">▼</span>
-        <span class="label">Show more about June 2024</span>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">TIES</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#projects" onclick="closeNav()">Projects</a></li>
+        <li><a href="../index.html#education" onclick="closeNav()">Education</a></li>
+        <li><a href="../index.html#career" onclick="closeNav()">Career</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/in/ties-van-der-sar/" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/TiesvdSar" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+        </a>
       </div>
-      <div class="content">
-        <p>
-          This month, we transported the car from the storage facility to my parents’ driveway.
-          As you can see, the car had collected a lot of dust over the years.
-          So, the first step was to clean the Spitfire.
-            <br>
-            <br>
-            <img src="../images/Spifire2.jpg"> <br>
-            <br>
-            After a thorough cleaning session, the car looked a lot better.<br>
-            <br>
-            <img src="../images/Spitfire3.jpg">
-        </p>
-      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     </div>
+  </nav>
 
-    <br>
-    <br>
-
-    <!-- Second toggle section -->
-    <h2>October 2024</h2>
-    <div id="section2" class="toggle-container">
-      <div class="header" onclick="toggleSection('section2')">
-        <span class="arrow">▼</span>
-        <span class="label">Show more about October 2024</span>
-      </div>
-      <div class="content">
-        <p>
-          Vintage cars often can’t be left outside during the winter.
-          That’s why, this month, we moved the Spitfire to a garage owned by Gijs’ uncle.
-          This garage is equipped with every tool a car enthusiast could wish for — which should help speed up the repairs.
-          <br>
-          <br>
-          <img src="../images/Spitfire4.jpg">
-          <br>
-          <br>
-        </p>
-      </div>
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+      <h1 class="page-title">Project Spitfire</h1>
+      <p class="page-subtitle">Triumph Spitfire Mark IV &mdash; 1975</p>
     </div>
-
-    <br>
-    <br>
-
-    <h2>March 2025</h2>
-    <div id="section3" class="toggle-container">
-      <div class="header" onclick="toggleSection('section3')">
-        <span class="arrow">▼</span>
-        <span class="label">Show more about March 2025</span>
-      </div>
-      <div class="content">
-        <p>
-          This month, we managed to get the Spitfire running (see video).<br>
-          Unfortunately, it’s not yet ready for the road.
-          The clutch still needs work, as do the brakes, lights, handbrake, and interior.
-          <br>
-          <br>
-          <video controls width="35%">
-          <source src="../videos/Spitfireriding.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        </p>
-      </div>
-    </div>
-
-    <br>
-    <br>
-
-    <h2>July 2025</h2>
-    <div id="section4" class="toggle-container">
-      <div class="header" onclick="toggleSection('section4')">
-        <span class="arrow">▼</span>
-        <span class="label">Show more about July 2025</span>
-      </div>
-      <div class="content">
-        <p>
-          This month, we successfully fixed the electrical system of the car, meaning it is now road-ready! (see video)
-          <br>
-          <br>
-          <video controls width="35%">
-          <source src="../videos/rijden.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        </p>
-      </div>
-    </div>
-
-
-    <script src="../scripts/show-arrow-button.js"></script>
-
-    
-    
   </div>
-  
+
+  <!-- Backstory -->
+  <section class="section">
+    <div class="container spitfire-content">
+
+      <div class="backstory">
+        <h2 class="section-title">Backstory</h2>
+        <p>
+          My father bought this Spitfire a long time ago as a gift for my mother.
+          They made many trips to different countries across Europe.
+          I also remember going for a ride with my father when I was seven years old.
+        </p>
+        <p>
+          In 2010, unfortunately, the car broke down and was put into storage.
+          After 14 years, in 2024, my father said to me &mdash; the only son studying a technical field &mdash;
+          <em>"Do you want to repair the Spitfire? Otherwise, I'm going to sell the car."</em>
+        </p>
+        <p>Below are the milestones of the restoration process.</p>
+      </div>
+
+      <!-- June 2024 -->
+      <div class="milestone">
+        <div class="milestone-header" onclick="toggleMilestone(this)">
+          <div class="milestone-meta">
+            <span class="milestone-date">June 2024</span>
+            <h3>The car comes home</h3>
+          </div>
+          <span class="milestone-arrow">&#9660;</span>
+        </div>
+        <div class="milestone-body">
+          <p>
+            This month, we transported the car from the storage facility to my parents' driveway.
+            As you can see, the car had collected a lot of dust over the years.
+            So, the first step was to clean the Spitfire.
+          </p>
+          <div class="milestone-images">
+            <img src="../images/Spifire2.jpg" alt="Spitfire before cleaning">
+            <img src="../images/Spitfire3.jpg" alt="Spitfire after cleaning">
+          </div>
+          <p>After a thorough cleaning session, the car looked a lot better.</p>
+        </div>
+      </div>
+
+      <!-- October 2024 -->
+      <div class="milestone">
+        <div class="milestone-header" onclick="toggleMilestone(this)">
+          <div class="milestone-meta">
+            <span class="milestone-date">October 2024</span>
+            <h3>Moving to the garage</h3>
+          </div>
+          <span class="milestone-arrow">&#9660;</span>
+        </div>
+        <div class="milestone-body">
+          <p>
+            Vintage cars often can't be left outside during the winter.
+            That's why, this month, we moved the Spitfire to a garage owned by Gijs' uncle.
+            This garage is equipped with every tool a car enthusiast could wish for &mdash; which should help speed up the repairs.
+          </p>
+          <div class="milestone-images">
+            <img src="../images/Spitfire4.jpg" alt="Spitfire in garage">
+          </div>
+        </div>
+      </div>
+
+      <!-- March 2025 -->
+      <div class="milestone">
+        <div class="milestone-header" onclick="toggleMilestone(this)">
+          <div class="milestone-meta">
+            <span class="milestone-date">March 2025</span>
+            <h3>It runs!</h3>
+          </div>
+          <span class="milestone-arrow">&#9660;</span>
+        </div>
+        <div class="milestone-body">
+          <p>
+            This month, we managed to get the Spitfire running (see video).
+            Unfortunately, it's not yet ready for the road.
+            The clutch still needs work, as do the brakes, lights, handbrake, and interior.
+          </p>
+          <div class="milestone-video">
+            <video controls>
+              <source src="../videos/Spitfireriding.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- July 2025 -->
+      <div class="milestone">
+        <div class="milestone-header" onclick="toggleMilestone(this)">
+          <div class="milestone-meta">
+            <span class="milestone-date">July 2025</span>
+            <h3>Road ready!</h3>
+          </div>
+          <span class="milestone-arrow">&#9660;</span>
+        </div>
+        <div class="milestone-body">
+          <p>
+            This month, we successfully fixed the electrical system of the car,
+            meaning it is now road-ready! (see video)
+          </p>
+          <div class="milestone-video">
+            <video controls>
+              <source src="../videos/rijden.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Ties van der Sar</p>
+      <p class="footer-sub">Mechatronics Engineer &middot; The Hague, Netherlands</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/ties-van-der-sar/" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/TiesvdSar" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+  <script>
+    function toggleMilestone(header) {
+      const milestone = header.parentElement;
+      const body  = milestone.querySelector('.milestone-body');
+      const arrow = header.querySelector('.milestone-arrow');
+      const isOpen = milestone.classList.contains('open');
+
+      if (isOpen) {
+        milestone.classList.remove('open');
+        body.style.maxHeight = '0';
+        arrow.style.transform = 'rotate(0deg)';
+      } else {
+        milestone.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        arrow.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
 </body>
 </html>
