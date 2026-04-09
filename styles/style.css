@@ -118,6 +118,37 @@ img { max-width: 100%; display: block; }
   padding: 4px 8px;
 }
 
+/* Language toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.lang-sep {
+  color: var(--border);
+  font-size: 13px;
+  user-select: none;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 4px 7px;
+  border-radius: 5px;
+  transition: color var(--transition), background var(--transition);
+}
+
+.lang-btn:hover { color: var(--text); background: var(--border); }
+.lang-btn.active { color: var(--accent); }
+
 /* =============================================
    HERO
    ============================================= */
@@ -198,6 +229,24 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-bio strong { color: var(--text); font-weight: 600; }
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.skill-chip {
+  background: rgba(255, 76, 96, 0.08);
+  border: 1px solid rgba(255, 76, 96, 0.25);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
 
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
 
@@ -566,6 +615,8 @@ img { max-width: 100%; display: block; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
   .nav-social { display: none; }
+
+  .skill-chips { justify-content: center; }
 }
 
 @media (max-width: 620px) {
